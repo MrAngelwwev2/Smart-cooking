@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PrincipalActivity">
+    tools:context=".PrincipalActivity"
+    android:src="@drawable/fondo_app_inicio">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo_app_inicio" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/fondo_cuadro"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/maybe_coffee"
+            android:gravity="center"
+            android:text="Bienvenido"
+            android:textColor="#000000"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/guide_notes"
+            android:text="Te recomendaremos los mejores platillos de la costa peruana. Por favor, ingresa tu nombre en el cuadro de texto ubicado en la parte inferior y dale clic en Continuar."
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ingresaNombre"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Ingresa tu nombre" />
+
+        <Button
+            android:id="@+id/botonContinuar"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:text="Continuar"
+            app:backgroundTint="#831818" />
+
+
+    </LinearLayout>
+</RelativeLayout>
