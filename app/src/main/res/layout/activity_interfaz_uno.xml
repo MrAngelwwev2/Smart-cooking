@@ -58,4 +58,50 @@
         app:srcCompat="@drawable/peru_flag"
         tools:ignore="MissingConstraints" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="379dp"
+        android:layout_height="151dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/fondo_cuadro_2"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿No sabes qué cocinar y cómo hacerlo?\n\nNo te preocupes, en esta aplicación te mostraremos lo que puedes cocinar con lo que tienes a tu alcance y como hacerlo."
+            android:textColor="#000000"
+            android:textSize="17.5sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="379dp"
+        android:layout_height="151dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="256dp"
+        android:background="@drawable/fondo_cuadro_2"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="193dp"
+            android:layout_height="117dp"
+            android:text="¿Tienes todos tus ingredientes pero no sabes que cocinar? Dale clic al botón debajo de este texto."
+            android:textColor="#000000"
+            android:textSize="17.5sp" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
